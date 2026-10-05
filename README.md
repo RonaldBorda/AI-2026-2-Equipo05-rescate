@@ -21,6 +21,6 @@
 Se empleó IA generativa (Gemini) para establecer la estructura del entorno 3D con Three.js, la interfaz gráfica con estilo *Glassmorphism* (HTML/CSS) y la estructura base de los algoritmos de grafos. Se modificó sustancialmente la lógica del Raycaster para que interactúe exclusivamente con el mapa (evitando interferencias con la UI) y se reescribió el motor de movimiento dinámico en JavaScript para que los algoritmos calculen rutas esquivando obstáculos de la cuadrícula en lugar de reiniciar la posición.
 
 **Roles.** 
-* Ronald Borda Bernaola (Líder): Integración del motor 3D, corrección de los algoritmos BFS y A*, e implementación de las físicas del dron. [Enlace a commits]
+* Ronald Borda Bernaola: Integración del motor 3D, corrección de los algoritmos BFS y A*, e implementación de las físicas del dron. Enlace a commits: https://github.com/RonaldBorda/AI-2026-2-Equipo05-rescate/commits/main/
 
 
