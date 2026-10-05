@@ -14,7 +14,7 @@
 | A* (A-Star) | 60 | 36% | 4 | 9.64s / 1 simulación |
 
 **Cómo ejecutarlo.** 
-* **Enlace público:** https://fronterarescate.netlify.app/
+* **Enlace público:** https://dronrescate.netlify.app/
 * **Local:** Clonar el repositorio. Dado que se utilizan texturas locales en Three.js, es necesario abrir el archivo `index.html` utilizando un servidor local (por ejemplo, la extensión "Live Server" en Visual Studio Code) para evitar errores de CORS.
 
 **Uso de IA.** 
