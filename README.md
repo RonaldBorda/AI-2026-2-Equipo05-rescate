@@ -5,7 +5,7 @@
 **Modo base.** El dron actúa de forma reactiva y a ciegas: intenta avanzar en línea recta hacia el objetivo y, al chocar con un escombro, elige un desvío inmediato de forma aleatoria, lo que agota su batería rápidamente sin garantía de éxito.
 
 **Técnicas comparadas.** 
-* Parte 1: Búsqueda en Anchura (BFS) y Búsqueda A* (A-Star)[cite: 10].
+* Parte 1: Búsqueda en Anchura (BFS) y Búsqueda A* (A-Star).
 
 | Técnica | Nodos Expandidos | Batería Restante | Rescatados (Métrica) | Tiempo/Corridas |
 | :--- | :--- | :--- | :--- | :--- |
