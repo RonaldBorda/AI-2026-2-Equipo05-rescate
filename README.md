@@ -1,4 +1,4 @@
-# Simulador de Rescate IA - Equipo [##]
+# La Nueva Frontera del Rescate - Equipo 5
 
 **Problema y quién lo sufre.** En zonas de desastre tras un sismo, los equipos de primera respuesta y los drones de exploración sufren la pérdida de tiempo crítico y el agotamiento de recursos (batería) debido a la falta de planificación de rutas óptimas ante entornos colapsados e impredecibles.
 
