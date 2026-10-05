@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Inter', sans-serif;
+    background-color: #ffffff; 
+    color: #e2e8f0;
+}
+
+canvas {
+    display: block;
+}
+
+.glass-panel {
+    background: rgba(15, 23, 42, 0.75);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    padding: 24px;
+    position: absolute;
+    z-index: 10;
+}
+
+/* Título Superior Centrado */
+.top-bar {
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    padding: 15px 40px;
+}
+
+.top-bar h1 {
+    margin: 0;
+    font-size: 28px;
+    color: #ffffff;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.top-bar .subtitle {
+    margin: 5px 0 0 0;
+    font-size: 15px;
+    color: #ffffff;
+    font-style: italic;
+}
+
+/* Panel Izquierdo (Controles) */
+.sidebar-left {
+    top: 120px;
+    left: 20px;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Panel Derecho (Información y Tabla) */
+.sidebar-right {
+    top: 120px;
+    right: 20px;
+    width: 350px;
+    bottom: 30px; /* Se estira hacia abajo */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.control-group label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #cbd5e1;
+    margin-bottom: 8px;
+    display: block;
+}
+
+select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.2);
+    background: rgba(0,0,0,0.3);
+    color: white;
+    font-size: 14px;
+    outline: none;
+}
+
+.tools-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+
+.tool-btn {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.05);
+    color: #cbd5e1;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 13px;
+}
+
+.tool-btn:hover { background: rgba(255, 255, 255, 0.15); }
+.tool-btn.active { background: #0284c7; border-color: #38bdf8; color: white; font-weight: 600; }
+
+.primary-btn {
+    background: linear-gradient(135deg, #ef4444, #b91c1c);
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.primary-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 254, 254, 0.4);
+}
+
+.stats-box {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 15px;
+    border-radius: 12px;
+}
+
+.stats-box h3 { margin: 0 0 10px 0; font-size: 15px; color: #f8fafc; }
+.stat-row { display: flex; justify-content: space-between; margin-bottom: 5px; font-size: 14px; }
+.stat-row .good { color: #4ade80; font-weight: bold; }
+
+.didactic-info { 
+    font-size: 13.5px; 
+    line-height: 1.6; 
+}
+
+.didactic-info h3 { margin-top: 0; color: #38bdf8; }
+.didactic-info p { margin: 8px 0; }
+
+.metrics-table-container { 
+    flex: 1; 
+    overflow-y: auto;
+    background: rgba(0,0,0,0.3);
+    border-radius: 8px;
+}
+
+table { width: 100%; border-collapse: collapse; font-size: 13px; text-align: center; }
+th { background: rgba(0,0,0,0.5); color: #38bdf8; padding: 12px 10px; position: sticky; top: 0; }
+td { padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1); }

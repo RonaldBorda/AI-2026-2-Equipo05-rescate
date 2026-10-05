@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Rescate IA</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <!-- Título Centralizado -->
+    <div class="glass-panel top-bar">
+        <h1>Drones: La Nueva Frontera del Rescate</h1>
+        <p class="subtitle">"Cada segundo cuenta, cada nodo importa."</p>
+    </div>
+
+    <!-- Panel Lateral Izquierdo: Controles -->
+    <div class="glass-panel sidebar-left">
+        <div class="control-group">
+            <label for="algorithm">Algoritmo de Búsqueda:</label>
+            <select id="algorithm">
+                <option value="base">Modo Base (Ruta Ciega)</option>
+                <option value="bfs">Búsqueda en Anchura (BFS)</option>
+                <option value="astar">A* (A-Star)</option>
+            </select>
+        </div>
+
+        <div class="control-group">
+            <label>Editor de Mapa:</label>
+            <div class="tools-container">
+                <button class="tool-btn active" data-tool="escombro">Escombro</button>
+                <button class="tool-btn" data-tool="victima">Víctima</button>
+                <button class="tool-btn" data-tool="borrar">Borrar</button>
+            </div>
+        </div>
+
+        <button id="start-btn" class="primary-btn">INICIAR BÚSQUEDA</button>
+
+        <div class="stats-box">
+            <h3>Estado del Dron</h3>
+            <div class="stat-row"><span>Batería:</span> <span id="stat-battery" class="good">100%</span></div>
+            <div class="stat-row"><span>Rescatados:</span> <span id="stat-victims">0</span></div>
+            <div class="stat-row"><span>Pasos:</span> <span id="stat-steps">0</span></div>
+        </div>
+    </div>
+
+    <!-- Panel Lateral Derecho: Información y Métricas -->
+    <div class="glass-panel sidebar-right">
+        <div class="didactic-info">
+            <h3>Información del Proyecto</h3>
+            <p><strong>El Problema:</strong> Falta de planificación de rutas en zonas de desastre.</p>
+            <p><strong>Modo Base:</strong> Ruta estática a ciegas, ineficiente.</p>
+            <p><strong>BFS:</strong> Explora por niveles, garantiza ruta corta pero gasta memoria analizando en todas direcciones.</p>
+            <p><strong>A*:</strong> Usa distancia heurística para ir directo al objetivo, optimizando recursos.</p>
+        </div>
+        
+        <div class="metrics-table-container">
+            <table id="metrics-table">
+                <thead>
+                    <tr>
+                        <th>Técnica</th>
+                        <th>Rescatados</th>
+                        <th>Batería</th>
+                        <th>Nodos</th>
+                        <th>Tiempo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Filas dinámicas -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
