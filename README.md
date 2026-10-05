@@ -22,6 +22,5 @@ Se empleó IA generativa (Gemini) para establecer la estructura del entorno 3D c
 
 **Roles.** 
 * Ronald Borda Bernaola (Líder): Integración del motor 3D, corrección de los algoritmos BFS y A*, e implementación de las físicas del dron. [Enlace a commits]
-* [Nombre Integrante 2]: [Qué hizo]. [Enlace a commits]
-* [Nombre Integrante 3]: [Qué hizo]. [Enlace a commits]
+
 
