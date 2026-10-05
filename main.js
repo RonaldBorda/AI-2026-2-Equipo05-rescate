@@ -22,9 +22,9 @@ scene.add(dirLight);
 // ==========================================
 const textureLoader = new THREE.TextureLoader();
 const groundMat = new THREE.MeshStandardMaterial({ map: textureLoader.load('img/suelo.jpg'), color: 0x444444 });
-const debrisMat = new THREE.MeshStandardMaterial({ map: textureLoader.load('img/escombros.jpg'), color: 0x883333 });
-const victimMat = new THREE.SpriteMaterial({ map: textureLoader.load('img/persona.png'), color: 0xffffff });
-const droneMat = new THREE.SpriteMaterial({ map: textureLoader.load('img/dron.png'), color: 0xffffff });
+const debrisMat = new THREE.MeshStandardMaterial({ map: textureLoader.load('img/escombros.jpg') });
+const victimMat = new THREE.SpriteMaterial({ map: textureLoader.load('img/persona.png') });
+const droneMat = new THREE.SpriteMaterial({ map: textureLoader.load('img/dron.png') });
 
 // ==========================================
 // MAPA 3D (10x10)
